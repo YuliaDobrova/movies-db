@@ -11,6 +11,12 @@
   padding: 1rem;
   filter: invert(1);
 }
+@media screen and (min-width: 1024px) {
+  .logo {
+    height: 5vmin;
+  }
+}
+
 .header {
   min-height: 18vh;
   display: flex;

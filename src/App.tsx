@@ -5,7 +5,11 @@ function App() {
   return (
     <div className={styles.root}>
       <header className={styles.header}>
-        <img src="./logo.png" className={styles.logo} alt="logo" />
+        <img
+          src="/images/video-player.png"
+          className={styles.logo}
+          alt="logo"
+        />
         <ul>
           <li>
             <Link className={styles.link} to="/">
