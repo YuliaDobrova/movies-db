@@ -15,18 +15,26 @@
     margin: 0.5rem;
   }
 }
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 1px shared.$link-color, -1px -1px 1px shared.$link-color;
+}
+
 .thumbnail {
-  max-height: 200px;
+  min-height: 160px;
+  width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
 
 .content {
+  width: 240px;
   padding: 1rem;
   .overview {
     font-size: small;
     color: shared.$dimmed-color;
-    height: 130px;
+    height: 150px;
+    overflow: hidden;
     margin-top: 5px;
   }
   .popularity {

@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { About } from "./features/About/About";
 import { Provider } from "react-redux";
-import Movies from "./features/Movies/Movies";
+import Movies, { MoviesFetch } from "./features/Movies/Movies";
 import App from "./App";
 import store from "./store";
 import "./index.scss";
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/movies",
-        element: <Movies />,
+        element: <MoviesFetch />,
       },
     ],
   },
